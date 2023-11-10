@@ -16,7 +16,7 @@ def test():
 
 def test_n_points(n):
     rng = np.random.default_rng()
-    points = rng.random((n, 2))   # n random points in 2-D, 
+    points = rng.random((n, 2))   # n random points in 2-D 
     hull_points = MyHull.convex_hull(points)
     scipy_hull = ConvexHull(points)
     scipy_hull_points = points[scipy_hull.vertices]
